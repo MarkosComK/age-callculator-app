@@ -18,6 +18,10 @@
   .h-342 {
     height: 342px;
   }
+  .text-32{
+    font-size: 32px;
+    input{ min-width:0;}
+  }
   .rounded-br-200{
     border-bottom-right-radius: 200px;
   }
