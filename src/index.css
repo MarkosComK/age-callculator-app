@@ -9,4 +9,16 @@
   .w-840 {
     width: 840px;
   }
+  .h-651 {
+    height: 651px;
+  }
+  .h-101 {
+    height: 101px;
+  }
+  .h-342 {
+    height: 342px;
+  }
+  .rounded-br-200{
+    border-bottom-right-radius: 200px;
+  }
 }
