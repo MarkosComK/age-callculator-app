@@ -33,14 +33,14 @@ function App() {
 
   return (
     <div className="w-full h-screen flex justify-center items-center bg-gray-100">
-      <section className="max-w-840 w-11/12 h-651  flex justify-center items-center flex-col bg-white rounded-br-200 rounded-3xl p-14">
-        <div className="w-full h-101 flex  gap-x-8">
+      <section className="max-w-840 w-11/12 sm:h-651  flex justify-center items-center flex-col bg-white sm:rounded-br-200 rounded-br-100 rounded-3xl p-6 sm:p-16">
+        <div className="w-full h-101 flex  gap-x-0 sm:gap-x-9">
           <div className="w-40">
             <p>
               Day
             </p>
             <fieldset>
-              <input className="text-32 font-bold w-40 p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid;" type="number" min={1} max={31} placeholder="DD" onChange={handleDay}/>
+              <input className="md:w-36 sm:w-32 w-24 text-32 font-bold p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid;" type="number" min={1} max={31} placeholder="DD" onChange={handleDay}/>
             </fieldset>
           </div>
           <div className="w-40">
@@ -48,7 +48,7 @@ function App() {
               Month
             </p>
             <fieldset>
-              <input className="text-32 font-bold w-40 p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid;" type="number" min={1} max={12} placeholder="MM" onChange={handleMonth}/>
+              <input className="md:w-36 sm:w-32 w-24 text-32 font-bold p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid;" type="number" min={1} max={12} placeholder="MM" onChange={handleMonth}/>
             </fieldset>
           </div>
           <div className="w-40">
@@ -56,11 +56,11 @@ function App() {
               Year
             </p>
             <fieldset>
-              <input className="text-32 font-bold w-40 p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid;" type="number" min={1900} max={2023} placeholder="YYYY" onChange={handleYear}/>
+              <input className="md:w-36 sm:w-32 w-24 text-32 font-bold p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid;" type="number" min={1900} max={2023} placeholder="YYYY" onChange={handleYear}/>
             </fieldset>
           </div>
         </div>
-        <div className="w-full h-24 flex items-center">
+        <div className="w-full sm:h-24 flex items-center">
           <div className="w-full h-px bg-gray-500 relative"></div>
           <div className=" top-0">
             <button className="rounded-full">
@@ -68,10 +68,10 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="h-342 w-full flex flex-col justify-center text-9xl text-left font-bold">
-          <div className="h-1/3"><span className="text-indigo-600">{years} </span>years</div>
-          <div className="h-1/3"><span className="text-indigo-600">{months} </span>months</div>
-          <div className="h-1/3"><span className="text-indigo-600">{days} </span>days</div>
+        <div className="sm:h-342 w-full flex flex-col justify-center md:text-9xl  sm:text-8xl text-6xl text-left font-bold">
+          <div className="md:h-1/3 sm:h-20 h-16"><span className="text-indigo-600">{years} </span>years</div>
+          <div className="md:h-1/3 sm:h-20 h-16"><span className="text-indigo-600">{months} </span>months</div>
+          <div className="md:h-1/3 sm:h-20 h-16"><span className="text-indigo-600">{days} </span>days</div>
         </div>
       </section>
     </div>

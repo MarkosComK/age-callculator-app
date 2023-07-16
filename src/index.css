@@ -25,6 +25,9 @@
   .rounded-br-200{
     border-bottom-right-radius: 200px;
   }
+  .rounded-br-100{
+    border-bottom-right-radius: 100px;
+  }
   input[type="text"]:focus {
     @apply border-[3px] border-solid border-[#555];
   }
