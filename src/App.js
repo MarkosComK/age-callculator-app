@@ -2,6 +2,8 @@ import { useState } from "react";
 import arrow from "./assets/images/Frame-30.png"
 
 function App() {
+  const [today, setToday] = useState(new Date())
+
   const [day, setDay] = useState(1)
   const [month, setMonth] = useState(1)
   const [year, setYear] = useState(1900)
@@ -23,9 +25,10 @@ function App() {
   }
 
   const calculateAge = () => {
-    setYears(2023-year)
-    setMonths(7-month)
-    setDays(16-day)
+    console.log(today.getMonth())
+    setYears(today.getFullYear()-year)
+    setMonths(today.getMonth()+1-month)
+    setDays(today.getDate()-day)
   }
 
   return (
