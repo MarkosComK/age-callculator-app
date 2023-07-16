@@ -32,7 +32,7 @@ function App() {
   }
 
   return (
-    <main className="w-full h-screen flex justify-center items-center bg-gray-100">
+    <main className="w-full h-screen flex justify-center items-center bg-gray-100 font-poppins">
       <section className="max-w-840 w-11/12 sm:h-651  flex justify-center items-center flex-col bg-white sm:rounded-br-200 rounded-br-100 rounded-3xl p-6 sm:p-16">
         <main className="w-full h-101 flex  gap-x-0 sm:gap-x-9">
           <div className="w-40">
@@ -68,7 +68,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="sm:h-342 w-full flex flex-col justify-center md:text-9xl  sm:text-8xl text-6xl text-left font-bold">
+        <div className="sm:h-342 w-full flex flex-col justify-center md:text-8xl  sm:text-7xl text-5xl text-left font-bold">
           <div className="md:h-1/3 sm:h-20 h-16"><span className="text-[#854DFF]">{years} </span>years</div>
           <div className="md:h-1/3 sm:h-20 h-16"><span className="text-[#854DFF]">{months} </span>months</div>
           <div className="md:h-1/3 sm:h-20 h-16"><span className="text-[#854DFF]">{days} </span>days</div>
