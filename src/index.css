@@ -22,6 +22,9 @@
     font-size: 32px;
     input{ min-width:0;}
   }
+  .text-purple{
+    color: #854DFF;
+  }
   .rounded-br-200{
     border-bottom-right-radius: 200px;
   }
