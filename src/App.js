@@ -40,7 +40,7 @@ function App() {
               Day
             </p>
             <fieldset>
-              <input className="md:w-36 sm:w-32 w-24 sm:text-32 font-bold p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid;" type="number" min={1} max={31} placeholder="DD" onChange={handleDay}/>
+              <input className="md:w-36 sm:w-32 w-24 sm:text-32 font-bold p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid focus:ring-red-500-input" type="number" min={1} max={31} placeholder="DD" onChange={handleDay}/>
             </fieldset>
           </div>
           <div className="w-40">
@@ -48,7 +48,7 @@ function App() {
               Month
             </p>
             <fieldset>
-              <input className="md:w-36 sm:w-32 w-24 sm:text-32 font-bold p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid;" type="number" min={1} max={12} placeholder="MM" onChange={handleMonth}/>
+              <input className="md:w-36 sm:w-32 w-24 sm:text-32 font-bold p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid" type="number" min={1} max={12} placeholder="MM" onChange={handleMonth}/>
             </fieldset>
           </div>
           <div className="w-40">
@@ -56,7 +56,7 @@ function App() {
               Year
             </p>
             <fieldset>
-              <input className="md:w-36 sm:w-32 w-24 sm:text-32 font-bold p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid;" type="number" min={1900} max={2023} placeholder="YYYY" onChange={handleYear}/>
+              <input className="md:w-36 sm:w-32 w-24 sm:text-32 font-bold p-4 @apply text-base border p-3 rounded-lg border-[#cccccc] border-solid" type="number" min={1900} max={2023} placeholder="YYYY" onChange={handleYear}/>
             </fieldset>
           </div>
         </main>
@@ -69,9 +69,9 @@ function App() {
           </div>
         </div>
         <div className="sm:h-342 w-full flex flex-col justify-center md:text-9xl  sm:text-8xl text-6xl text-left font-bold">
-          <div className="md:h-1/3 sm:h-20 h-16"><span className="text-purple">{years} </span>years</div>
-          <div className="md:h-1/3 sm:h-20 h-16"><span className="text-purple">{months} </span>months</div>
-          <div className="md:h-1/3 sm:h-20 h-16"><span className="text-purple">{days} </span>days</div>
+          <div className="md:h-1/3 sm:h-20 h-16"><span className="text-[#854DFF]">{years} </span>years</div>
+          <div className="md:h-1/3 sm:h-20 h-16"><span className="text-[#854DFF]">{months} </span>months</div>
+          <div className="md:h-1/3 sm:h-20 h-16"><span className="text-[#854DFF]">{days} </span>days</div>
         </div>
       </section>
     </main>
